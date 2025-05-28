@@ -75,35 +75,21 @@
                         <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
                         </li>
-                        <!-- <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </a>
-                        </li> -->
                     </ul>
                 </div><!-- /.navbar-collapse -->
                 
-                <!-- search box submenu -->
-                <div class="collapse" id="bs-example-navbar-collapse-2">
-                    <gcse:search></gcse:search>
-                        </div>
                 
             </div><!-- /.container-fluid -->
         </nav>
         
-        <section>
-            <!-- Place this tag where you want the search results to render -->
-            <gcse:searchresults-only></gcse:searchresults-only>
-                </section>
-        
         <!-- Home Section -->
-        <section  name="home" id="home" style="margin-top:40px">
+        <section  name="home" id="home" style="margin-top:40px; margin-bottom:20px">
             <div class="container">
                 <div align="left" class="col-md-3">
                     <a target="_blank" href="images/headshot.jpg">
-                        <img id="mobile-img" src="images/headshot.jpg" width="250" border="0" alt=""></a>
+                        <img id="mobile-img" src="images/headshot.jpg" width="200" border="0" alt=""></a>
                 </div>
-                <div align="left" class="col-md-6">
+                <div align="left" class="col-md-6" style="margin-bottom:20px">
                     <h2>Calum Buchanan</h2>
 
                     <h4>
@@ -115,7 +101,6 @@
                 </div>
                 
                 
-                </i>
                 
                 <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
                 <b class="expandshow" style="display:none;" id="tab-1">
@@ -135,14 +120,14 @@
                     <!--<h2>Welcome!</h2>-->
                     
                     <b class="noshow" style="display:none;" id="tab-1">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction  <span class="glyphicon glyphicon-chevron-down"></span></button>
                     </b>
                     
                     <div class="allshow" style="display:none;" id="tab-intro-content">
                         <hr class="star-primary">
                         
                         <p class="lead">
-                        I am a mathematician, excited to be starting as a visiting assistant professor in the Department of Mathematics at the University of Denver in September 2025.
+                        I am a mathematician, excited to be starting as a Visiting Assistant Professor in the Department of Mathematics at the University of Denver in September 2025.
                         I recently obtained my PhD from the University of Vermont (UVM) under the supervision of Professor Puck Rombach.
                         Research and teaching are both great passions of mine, and I took pride in my role as a graduate primary instructor at UVM.
                         For the moment, I remain on a Vermont Space Grant Consortium Graduate Research Fellowship.
@@ -154,19 +139,23 @@
 
                         <p>
                         <a target="_blank" href="CV-latex/cv.pdf" class="btn-sm btn-primary">CV&raquo;</a>
+                        </p>
+
                     </div>
-                    
                 </div>
             </div>
         </section>
-		
 
 
 		<!-- Statement -->
         <section  name="statement" id="statement">
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
-                    <div class="allshow" style="display:none;" id="tab-talks-content">
+
+                    <b class="noshow" style="display:none;" id="tab-2">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-statement-content').toggle();">Statement  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-statement-content">
                         <hr class="star-primary">
                         <h2>Free Palestine</h2>
                         
@@ -185,16 +174,20 @@
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
                     
-                    <b class="noshow" style="display:none;" id="tab-2">
+                    <b class="noshow" style="display:none;" id="tab-3">
                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-research-content').toggle();">Research  <span class="glyphicon glyphicon-chevron-down"></span></button>
                     </b>
-                    <div class="allshow" style="display:none;" id="tab-courses-content">
+                    <div class="allshow" style="display:none;" id="tab-research-content">
                         <hr class="star-primary">
                         <h2>Publications & Preprints</h2>
 
                         <p>
-                        <a target="_blank" href="https://doi.org/10.48550/arXiv.2408.08598"><em>On odd covers of cliques and disjoint unions</em></a> with Alexander Clifton, Eric Culver, Péter Frankl, Jiaxi Nie, Kenta Ozeki, Puck Rombach, and Mei Yin; <em>arXiv:2408.08598</em>, 2024.
+                        <a target="_blank" href="papers/Buchanan_Dissertation_Published.pdf">
+                        <em>Odd covers and graph saturation</em></a>, PhD dissertation, University of Vermont, 2025.
+                        </p>
 
+                        <p>
+                        <a target="_blank" href="https://doi.org/10.48550/arXiv.2408.08598"><em>On odd covers of cliques and disjoint unions</em></a> with Alexander Clifton, Eric Culver, Péter Frankl, Jiaxi Nie, Kenta Ozeki, Puck Rombach, and Mei Yin; <em>arXiv:2408.08598</em>, 2024.
                         </p>
 
                         <p>
@@ -232,19 +225,10 @@
                         <p>
                         <a target="_blank" href="https://doi.org/10.37236/10383"><em>Subgraph complementation and minimum rank</em></a> with Christopher Purcell and Puck Rombach; <em>Electr. J. Comb.</em>, 29(1), 2022.
                         </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-		
-		
-		
-		<!-- Talks Section -->
-        <section  name="talks" id="talks">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-                    <div class="allshow" style="display:none;" id="tab-talks-content">
-                        <hr class="star-primary">
+                    
+
+
+                        <hr class="star-primary" style="margin-top:60px">
                         <h2>Talks & Posters</h2>
                         
                         <p>
@@ -272,18 +256,10 @@
                         <span class="label label-success"><a target="_blank" href="talks/Odd_Covers_Poster.pdf"><font color="white">Poster</font></a></span>
                         on odd covers of graphs for the 2022 Discrete Math Days
                         </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
+                    
 
-        <!-- Workshops Section -->
-        <section  name="workshops" id="workshops">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-                    <div class="allshow" style="display:none;" id="tab-talks-content">
-                        <hr class="star-primary">
+
+                        <hr class="star-primary" style="margin-top:60px">
                         <h2>Workshops</h2>
 
                         <p>
@@ -323,8 +299,8 @@
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
                     
-                    <b class="noshow" style="display:none;" id="tab-3">
-                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-courses-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    <b class="noshow" style="display:none;" id="tab-4">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-courses-content').toggle();">Teaching  <span class="glyphicon glyphicon-chevron-down"></span></button>
                     </b>
                     <div class="allshow" style="display:none;" id="tab-courses-content">
                         <hr class="star-primary">
@@ -355,7 +331,7 @@
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
                     
-                    <b class="noshow" style="display:none;" id="tab-6">
+                    <b class="noshow" style="display:none;" id="tab-5">
                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-outreach-content').toggle();">Outreach  <span class="glyphicon glyphicon-chevron-down"></span></button>
                     </b>
                     
@@ -386,7 +362,7 @@
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
                     
-                    <b class="noshow" style="display:none;" id="tab-7">
+                    <b class="noshow" style="display:none;" id="tab-6">
                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-links-content').toggle();">Links  <span class="glyphicon glyphicon-chevron-down"></span></button>
                     </b>
                     
@@ -408,7 +384,7 @@
              <div class="container lead">
                  <div style="text-align: left; margin-top:10px" class="col-md-12">
                      
-                     <b class="noshow" style="display:none;" id="tab-5">
+                     <b class="noshow" style="display:none;" id="tab-7">
                          <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-down"></span></button>
                      </b>
                      <div class="allshow" style="display:none;" id="tab-awards-content">
@@ -439,7 +415,7 @@
 		
 		
         
-        <!-- Home Section -->
+        <!-- Contact Section -->
         <section  name="contact" id="contact">
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
